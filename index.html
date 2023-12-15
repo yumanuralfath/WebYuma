@@ -8,11 +8,17 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="/dist/img/Untitleddsd-removebg-previessw.png"
+      href="/dist/img/Untitleddsd-removebg-previesaassw.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&display=swap"
+      rel="stylesheet"
     />
   </head>
 
-  <body class="bg-gradient-to-r from-black to-green-950">
+  <body class="bg-white">
     <!-- Header Start -->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
@@ -20,30 +26,74 @@
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home"
-              ><img
-                src="/dist/img/download.png"
-                alt="Homepage"
-                class="w-10 pt-8 block py-6"
-            /></a>
+            <a href="#Home" class="home">Yumana</a>
           </div>
           <div class="flex items-center px-4">
             <button
               id="hamburger"
               name="hamburger"
               type="button"
-              class="block absolute right-4"
+              class="block absolute right-4 lg:hidden"
             >
               <span
-                class="hamburger-line transition duration-300 ease-in-out"
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
               ></span>
               <span
                 class="hamburger-line transition duration-300 ease-in-out"
               ></span>
               <span
-                class="hamburger-line transition duration-300 ease-in-out"
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
               ></span>
             </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#Home"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-slate-600"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-slate-600"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-slate-600"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-slate-600"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-slate-600"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contacts"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-slate-600"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -51,75 +101,88 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="Home" class="pt-36"></section>
-    <div class="container">
-      <div class="flex flex-wrap">
-        <div class="w-full self-center px-4 lg:w-1/2">
-          <h1
-            class="text-base font-semibold text-primary md:text-xl lg:text-2xl"
-          >
-            Welcome Adventurer🙌 , I'm
-            <span class="block font-bold text-third text-4xl mt-1 lg:text-5xl"
-              >Yuma Nur Alfath
-            </span>
-          </h1>
-          <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
-            <span class="text-primary">Junior Web Dev </span> |
-            <span class="text-third"> Chemistry Fresh Graduate </span> |
-            <span class="text-primary">Tech Enthusiast </span>|
-          </h2>
-          <p class="font-medium text-third mb-10 leading-relaxed">
-            <span class="text-green-850">Stay Foolish And Hungry! </span>
-            <span class="font-bold italic">Ngoding aja dulu.</span>
-          </p>
-          <a
-            href="https://www.linkedin.com/in/yuma-nur-alfath-b31104264/"
-            target="_blank"
-            class="text-base font-semibold text-white bg-third py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-            >Connect With Me</a
-          >
-        </div>
-        <div class="w-full self-end px-4 lg:w-1/2">
-          <div class="relative mt-10 lg:mt-9 lg:right-0">
-            <img
-              src="dist/img/Untitleddsd-removebg-preview.png"
-              alt="Yuma Nur Alfath"
-              class="max-w-full mx-auto"
-            />
-            <span
-              class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125"
+    <section id="Home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1
+              class="text-base font-semibold text-slate-800 md:text-xl lg:text-2xl"
             >
+              Welcome Adventurer🙌 , I'm
+              <span
+                class="block font-bold text-slate-900 text-4xl mt-1 lg:text-5xl"
+                >Yuma Nur Alfath
+              </span>
+            </h1>
+            <h2 class="font-medium text-slate-800 text-lg mb-5 lg:text-2xl">
+              <span class="text-slate-800">| Junior Web Dev </span> |
+              <span class="text-slate-700"> Chemistry Fresh Graduate </span> |
+              <span class="text-slate-800">Tech Enthusiast </span>|
+            </h2>
+            <p class="font-medium mb-10 leading-relaxed">
+              <span class="text-slate-800">Stay Foolish And Hungry! </span>
+              <span class="font-bold italic text-slate-900"
+                >Ngoding aja dulu.</span
+              >
+            </p>
+            <a
+              href="https://www.linkedin.com/in/yuma-nur-alfath-b31104264/"
+              target="_blank"
+              class="text-base font-semibold text-white bg-slate-900 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >Connect With Me</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img
+                src="dist/img/_DSC4614.png"
+                alt="Yuma Nur Alfath"
+                class="max-w-xs mx-auto"
               />
-            </span>
+              <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2">
+                <svg
+                  width="400"
+                  height="350"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#1e293b"
+                    d="M42.4,-61.7C54.8,-49.4,64.5,-36.7,72.6,-21.3C80.8,-5.9,87.4,12.3,82.7,26.8C77.9,41.3,61.7,52,46.1,58.9C30.4,65.9,15.2,69.1,-1.2,70.7C-17.6,72.3,-35.2,72.5,-45.3,63.7C-55.4,54.9,-58,37.3,-62.3,21C-66.7,4.6,-72.7,-10.5,-69.6,-23.4C-66.5,-36.2,-54.1,-46.9,-41,-59C-27.9,-71,-13.9,-84.5,0.5,-85.3C15,-86,30,-74,42.4,-61.7Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
     <section id="about" class="pt-36 pb-32">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 text-primary lg:w-1/2">
+          <div class="w-full px-4 mb-10 text-slate-950 lg:w-1/2">
             <h4 class="font-bold uppercase text-lg mb-3">About Me</h4>
             <h2
-              class="font-bold text-primary text-3xl mb-5 max-w-md lg:text-4xl"
+              class="font-bold text-slate-900 text-3xl mb-5 max-w-md lg:text-4xl"
             >
               Lets Me Introduce My Self
             </h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+            <p class="font-medium text-base text-slate-800 max-w-xl lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               esse quaerat reiciendis dolor quis, reprehenderit libero.
             </p>
           </div>
-          <div class="w-full px-4 text-primary lg:w-1/2">
+          <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="font-semibold text-primary text-2xl mb-4 lg:text-3xl lg:pt-10"
+              class="font-semibold text-slate-900 text-3xl mb-4 lg:text-4xl lg:pt-10"
             >
               Lets Connected
             </h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+            <p class="font-medium text-base text-slate-800 mb-6 lg:text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
               tenetur eligendi voluptatibus aliquam rerum cum maiores similique
               id!
@@ -190,12 +253,8 @@
         </div>
       </div>
     </section>
-
-    <h1>test yeah</h1>
     <!-- About Sectiton End -->
 
     <script src="dist/js/script.js"></script>
   </body>
 </html>
-
-<!-- test -->
