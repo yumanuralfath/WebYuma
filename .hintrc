@@ -4,6 +4,7 @@
   ],
   "hints": {
     "axe/name-role-value": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "button-type": "off"
   }
 }
