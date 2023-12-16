@@ -1179,16 +1179,6 @@ body {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:w-1 {
-    width: 0.25rem;
-  }
-
-  .sm\:w-0 {
-    width: 0px;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:w-1\/2 {
     width: 50%;
@@ -1240,10 +1230,6 @@ body {
 
   .lg\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .lg\:w-1 {
-    width: 0.25rem;
   }
 
   .lg\:max-w-full {
